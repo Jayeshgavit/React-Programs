@@ -1,0 +1,34 @@
+
+.btn{
+  background-color: #007bff; /* Blue background */
+  color: white;            /* White text */
+  border: none;            /* Remove default border */
+  padding: 12px 20px;      /* Add some padding */
+  font-size: 16px;         /* Font size */
+  border-radius: 8px;      /* Rounded corners */
+  cursor: pointer;         /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.btn:hover {
+  background-color: #0056b3; /* Darker blue */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly bigger shadow */
+}
+
+/* Active/Clicked Effect */
+.btn:active {
+  background-color: #00408a; /* Even darker blue */
+  transform: scale(0.95);    /* Slightly shrink */
+  
+}
+
+img{
+  width: 200px;
+  height: auto;
+}
+img:active{
+  transform: scale(1.1); /* Increase size on hover */
+  transition: ease-in-out 0.1s; /* Smooth transition for hover effects */
+}

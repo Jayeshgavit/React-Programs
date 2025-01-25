@@ -1,0 +1,46 @@
+.category-container {
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 24px;
+  flex-wrap:wrap;
+
+}
+
+.list-divs{
+  width: 300px;
+  height: auto;
+  background-color: rgba(50, 48, 182, 0.116);
+  justify-items: center;
+  padding: 5px 5px;
+  margin: 4px;
+  border: 1px solid rgba(128, 0, 128, 0.301);
+  box-shadow: 5px 5px rgb(210, 230, 236);
+  border-radius: 17px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  font-size: 1.5rem;
+  margin: 0 20px;
+  width: 18rem;
+  text-align: center;
+  background: #000;
+  color: white;
+}
+
+.list-items li{
+  list-style: disc;
+  margin: 2px 0;
+  font-size: 1.2rem;
+
+}
+
+.list-items li:hover{
+  background-color: rgba(179, 126, 214, 0.185);
+  color: blue;
+  cursor: pointer;
+}

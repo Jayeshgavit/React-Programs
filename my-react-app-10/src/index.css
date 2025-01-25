@@ -1,0 +1,91 @@
+/* General body styles */
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif; /* Added a default font */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures content is centered in the viewport */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Fills the entire viewport */
+}
+
+/* Container for the forms */
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between child elements */
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  padding: 10px;
+}
+
+/* Common styles for div1 and div2 */
+.div1, .div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border: 1px solid black;
+  margin: 4px; /* Increased margin slightly for better spacing */
+  padding: 8px; /* Added more padding for a spacious look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  background-color: #f9f9f9; /* Subtle background for better visibility */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Hover effect for div1 and div2 */
+.div1:hover, .div2:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Center textarea or additional content inside a container */
+.div-textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px; /* Padding for better spacing */
+  text-align: center; /* Align text content */
+}
+
+/* Styles for div3 */
+.div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  border: 1px solid black;
+  margin: 4px;
+  padding: 12px; /* Increased padding for content inside */
+  border-radius: 5px; /* Matches the rounded style */
+  background-color: #f0f0f0; /* Subtle background for differentiation */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for aesthetics */
+}
+
+.div-select-options{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 4px;
+  padding: 12px; /* Increased padding for content inside */
+  border-radius: 5px; /* Matches the rounded style */
+  background-color: #f0f0f0; /* Subtle background for differentiation */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for aesthetics */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .div1, .div2 {
+    width: 100%; /* Full width on smaller screens */
+  }
+  .div3 {
+    width: 90%; /* Slightly smaller than full width for better spacing */
+  }
+}
